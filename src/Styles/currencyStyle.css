@@ -1,0 +1,27 @@
+
+.logoutBtn {
+    -fx-background-color: #a92448;
+    -fx-text-fill: white;
+}
+
+.logoutBtn:hover {
+    -fx-background-color: #ed0053;
+}
+
+.convertBtn {
+    -fx-background-color: #025cc2;
+    -fx-text-fill: white;
+}
+
+.convertBtn:hover {
+    -fx-background-color: #0086e9;
+}
+
+.resetBtn {
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.resetBtn:hover {
+    -fx-background-color: #434343;
+}

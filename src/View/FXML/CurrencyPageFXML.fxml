@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="376.0" prefWidth="690.0" style="-fx-background-color: #e6e6e6;" stylesheets="@../../Styles/currencyStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CurrencyPageFXMLController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="4.0" prefHeight="358.0" prefWidth="675.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+         <children>
+            <Button fx:id="logoutBtn" layoutX="535.0" layoutY="22.0" mnemonicParsing="false" onAction="#logoutBtnHandel" prefHeight="37.0" prefWidth="106.0" styleClass="logoutBtn" text="Logout">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="convertBtn" layoutX="209.0" layoutY="254.0" mnemonicParsing="false" onAction="#convertBtnHandel" prefHeight="45.0" prefWidth="112.0" styleClass="convertBtn" text="Convert">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Label fx:id="usLabel" layoutX="170.0" layoutY="108.0" prefHeight="35.0" prefWidth="39.0" text="US">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="nisLabel" layoutX="453.0" layoutY="108.0" prefHeight="35.0" prefWidth="51.0" text="NIS">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="317.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Img/currencyImg.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="resetBtn1" layoutX="341.0" layoutY="254.0" mnemonicParsing="false" onAction="#resetBtnHandel" prefHeight="45.0" prefWidth="112.0" styleClass="resetBtn" text="Reset">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Label fx:id="title" layoutX="15.0" layoutY="19.0" prefHeight="37.0" prefWidth="232.0" style="-fx-text-fill: orange;" text="Currency Converter">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usField" layoutX="75.0" layoutY="151.0" prefHeight="45.0" prefWidth="232.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="nisField" layoutX="367.0" layoutY="153.0" prefHeight="45.0" prefWidth="232.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
